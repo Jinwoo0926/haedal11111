@@ -1,0 +1,14 @@
+import turtle as t
+
+with open("new.txt","r") as f:
+    lines = f.readlines()
+    value = list(map(int, lines))
+
+t.shape("turtle")
+dimension = len(value)
+
+for i in range(0, dimension -1, 2):
+    t.forward(value[i])
+    t.right(value[i + 1])
+
+turtle.forward(value[-1])
