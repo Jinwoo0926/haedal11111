@@ -1,0 +1,25 @@
+class actor:
+    actor_count = 0
+
+
+
+    def __init__(self, name, Age, Birthday, famous work):
+        self.name = name
+        self.Age = Age
+        self.Birthday = Birthday
+        self.famous work = famous work
+        actor.actor_count += 1
+
+    def info(self):
+        print(f'배우:{self.name}')
+        print(f'나이:{self.Age}')
+        print(f'생일:{self.Birthday}')        print(f'유명한 작품:{self.famous work}')
+        print()
+
+actor1 = actor('마동석', 51, 19711112, [범죄도시, 악인전])
+actor2 = actor('박서준', 34, 19881216, [쌈마이웨이, 이태원 클라쓰])
+actor3 = actor(‘서현진’, 37, 19850227, [또오해영, 뷰티인사이드])
+
+actor1.info()
+actor2.info()
+actor3.info()
